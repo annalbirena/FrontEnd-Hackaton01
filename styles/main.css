@@ -1,0 +1,133 @@
+/*
+Selectores GLOBAL que aplican a toda la pagina
+*/
+body{
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none; /*Define que todos los enlaces a no tengan formato*/
+}
+
+.pagina{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+/*CARD*/
+article{
+    width: 320px; /*ancho del bloque*/
+    margin: auto; /*Centra todo el bloque respecto al ancho de la pagina*/
+    border: 12px solid #e4e4e4;
+    text-align: center;
+    padding: 20px;
+    position: relative; /*Esto se pone debido a que se va a ubicar con posicion absoluta
+    a un elemento de article*/
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+article img { /*Debido a que solo hay una imagen dentro del proyecto se pone 
+    article img pero en el caso hayan mas si debemos ser especificos 
+    poniendo articl figure img*/
+    border-radius: 100%; 
+    margin-bottom: 15px;
+}
+article h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+article address {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(109, 105, 105);
+}
+
+article p{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+article div{
+    display: flex; /*Ubica un elemento a lado del otro*/
+    justify-content: space-between; /*separa los elementos ubicandolos a los extremos*/
+    margin-bottom: 10px;
+}
+
+article ul {
+    text-align: left;
+}
+
+article .first{ /*Estamos llamando la clase creada en el html*/
+    color: rgb(13, 15, 15);
+}
+article .last{
+    color: goldenrod
+}
+
+
+article button{
+    background-color: transparent;
+    border: 1px solid rgb(13, 105, 93);
+    color: rgb(13, 105, 93);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+article .list-social{
+    display: flex;
+    justify-content: center; /*ubica todo los elementos en el centro*/
+}
+
+article .list-social li{ /*Aqui separa los elementos centrados con margenes derecha e izquierda*/
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+article .list-social a{
+    color: white;
+    display: block;
+    background-color:#9e759e;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+article .list-social a.facebook{
+    background-color:#528cef;
+}
+
+article .list-social a.twitter{
+    background-color:#6fcae2;
+}
+
+article .list-social a.google{
+    background-color:#ecc663;
+}
+
+article .list-social a.instagram{
+    background-color:#bd2d87;
+}
+
+
+article .button-icon{
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
